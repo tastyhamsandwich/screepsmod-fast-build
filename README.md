@@ -1,4 +1,4 @@
-# 🔧 screepsmod-fastbuild
+# 🔧 screepsmod-fast-build
 
 Modifies Screeps server constants **construction costs** and **controller progression**, with:
 - Automatic persistence
@@ -48,3 +48,4 @@ Reduces construction costs and upgrade requirements by a factor of 10
 
 - Restore original Screeps default Values
 `constants reset`
+
