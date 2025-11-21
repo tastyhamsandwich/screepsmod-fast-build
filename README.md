@@ -38,28 +38,29 @@ Reduces construction costs and upgrade requirements by a factor of 10
 ## CLI Commands
 
 
-- Get the current value
+#### Get the current value
   
 `constants get CONSTRUCTION_COST.spawn`
 
 
-- Get all constants
+#### Get all constants
   
 `constants get`
 
 
-- Change a value
+#### Change a value
   
 `constants set CONSTRUCTION_COST.spawn 2000`
 
 (Values must be valid JSON (e.g. numbers, strings, arrays, objects)
 
 
-- Apply modified values immediately (hot reload)
+#### Apply modified values immediately (hot reload)
   
 `constants reload`
 
-- Restore original Screeps default Values
+#### Restore original Screeps default Values
 `constants reset`
+
 
 
