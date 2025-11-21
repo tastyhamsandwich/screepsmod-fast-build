@@ -1,0 +1,7 @@
+{
+  "output": "CHANGELOG.md",
+  "template": "node_modules/auto-changelog/templates/default.hbs",
+  "unreleased": true,
+  "hideUnreleased": false,
+  "prepend": false
+}

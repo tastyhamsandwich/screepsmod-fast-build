@@ -1,0 +1,45 @@
+{
+	"name": "screepsmod-fast-build",
+	"private": true,
+	"version": "1.0.0",
+	"author": "Random Encounter / Emmett Drummond <danvisibleman@gmail.com>",
+	"main": "dist/index.js",
+	"license": "MIT",
+	"keywords": [
+		"screeps",
+		"screepsmod",
+		"mod"
+	],
+	"scripts": {
+		"build": "tsc",
+		"test": "mocha -r ts-node/register test/**/*.test.ts",
+		"changelog": "auto-changelog -p"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"release": {
+		"branches": [
+			"main",
+			"next"
+		],
+		"plugins": [
+			"@semantic-release/commit-analyzer",
+			"@semantic-release/release-notes-generator",
+			"@semantic-release/npm",
+			"@semantic-release/github"
+		]
+	},
+	"devDependencies": {
+		"@semantic-release/git": "^10.0.1",
+		"@semantic-release/github": "^11.0.6",
+		"@semantic-release/npm": "^12.0.2",
+		"@types/node": "^22.0.0",
+		"auto-changelog": "^2.4.0",
+		"chai": "^5.1.0",
+		"conventional-changelog": "^7.1.1",
+		"mocha": "^11.0.0",
+		"semantic-release": "^24.2.9",
+		"typescript": "^5.6.0"
+	}
+}
